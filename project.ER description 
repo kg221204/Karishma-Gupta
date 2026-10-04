@@ -1,0 +1,61 @@
+
+
+PROJECT TITLE: ONLINE TOURISM MANAGEMENT SYSTEM WITH SALES ANALYSIS
+
+*1. INTRODUCTION:*
+Online Tourism Management System ek web-based application hai jo tourism bookings ko manage karne ke liye banaya gaya hai. Iska main maksad hai customers ko online tour packages book karne ki suvidha dena aur admin ko bookings, revenue aur payments ka analysis karne me help karna. Ye system manual booking process ko digital aur easy banata hai.
+
+*2. OBJECTIVE:*
+- User ko online tour package book karne ki suvidha dena.
+- Admin ko saari bookings ka record ek jagah dikhana.
+- Pure saal ka sales data store karna (Jan se Dec 2024).
+- Revenue, Top City, Best Selling Package ka analysis karna.
+- Time aur cost dono bachana.
+
+*3. MODULES:*
+
+*A) User Module:*
+- User apna naam, email, phone enter karega.
+- City aur Package select karega (Goa, Manali, Jaipur etc).
+- Date aur Amount enter karke Book Now karega.
+- Data direct database me save hoga.
+
+*B) Admin Module:*
+- Admin login (Username: admin, Password: admin123).
+- Saari bookings ki list dekhega.
+- Total Revenue dekhega - `SUM(Amount)`.
+- Top City konsa hai jaha sabse zyada booking hui.
+- Best Selling Package konsa hai.
+- Payments ka status (Paid/Pending) - UPI, Card, Cash.
+
+*4. TECHNOLOGY USED:*
+- Frontend: HTML, CSS
+- Backend: PHP
+- Database: MySQL (XAMPP / phpMyAdmin)
+- Tool: VS Code, GitHub, Power BI for Analysis
+
+*5. DATABASE TABLES (5 Tables):*
+1.  `admin` - Admin login details ke liye.
+2.  `users` - Customer ki details.
+3.  `packages` - 5 Tour packages (Goa, Manali, Jaipur, Kerala, Varanasi).
+4.  `bookings` - Main table, isme 13 bookings ka saal bhar ka data hai (2024).
+5.  `payments` - Payment mode aur status ke liye.
+
+*6. ER DIAGRAM RELATIONSHIP:*
+- USERS (1) to BOOKINGS (N) = One user can do many bookings.
+- BOOKINGS (1) to PAYMENTS (1) = One booking has one payment.
+
+*7. KEY FEATURES & ANALYSIS QUERY:*
+- Total Revenue: `SELECT SUM(Amount) FROM bookings;`
+- Top City Wise Revenue: `SELECT City, SUM(Amount) FROM bookings GROUP BY City;`
+- Monthly Trend: `SELECT MONTH(BookingDate), COUNT(_) FROM bookings GROUP BY MONTH(BookingDate);`
+- Payment Mode Analysis: `SELECT PaymentMode, COUNT(_) FROM payments GROUP BY PaymentMode;`
+
+*8. FUTURE SCOPE:*
+- Isme Online Payment Gateway add kiya ja sakta hai.
+- User ke liye Login/Signup system.
+- Power BI Dashboard se live graph dikhaya ja sakta hai.
+- Email Notification system for booking confirmation.
+
+*9. CONCLUSION:*
+Ye project tourism industry ke liye ek complete solution hai jisme booking ke saath-saath data analysis bhi hota hai. Isse admin ko business decision lene me aasani hoti hai ki konsa package aur konsa city sabse zyada profitable h
