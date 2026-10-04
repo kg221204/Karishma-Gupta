@@ -3,6 +3,7 @@
 <head>
 <title>Admin Panel - Tourism</title>
 <link rel="stylesheet" href="admin.css">
+    <script src="Admin_dashboard.js"></script>
 </head>
 <style>
 body{font-family: Arial; margin:0; background:#f4f4f4;}
