@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Travel Booking - User</title>
+<title>Admin Panel - Tourism</title>
 <style>
 body{font-family: Arial; margin:0; background:#f4f4f4;}
-.header{background:#0077b6; color:white; padding:15px; text-align:center;}
-.container{width:80%; margin:20px auto; background:white; padding:20px; border-radius:10px;}
-input, select{width:100%; padding:10px; margin:10px 0;}
-button{background:#0077b6; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;}
-.package{display:flex; gap:15px; margin-top:15px;}
-.card{border:1px solid #ddd; padding:15px; width:30%; border-radius:10px; text-align:center;}
-.card img{width:100%; border-radius:10px;}
+.header{background:#023e8a; color:white; padding:15px; text-align:center;}
+.sidebar{width:20%; background:#03045e; color:white; height:100vh; float:left; padding:15px;}
+.sidebar p{padding:10px; cursor:pointer; background:#0077b6; margin:5px 0; border-radius:5px;}
+.content{width:75%; float:left; padding:20px;}
+.box{width:22%; background:white; padding:15px; float:left; margin:1%; text-align:center; border-radius:10px; box-shadow:0 0 5px #ccc;}
+table{width:100%; background:white; border-collapse:collapse; margin-top:20px;}
+th, td{border:1px solid #ddd; padding:10px; text-align:center;}
+th{background:#0077b6; color:white;}
 </style>
 </head>
 <body>
-<div class="header"><h2>✈️ Online Tourism Management System - User Panel</h2></div>
-<div class="container">
-<h3>Book Your Trip</h3>
-<input type="text" placeholder="Your Name">
-<select><option>Select City</option><option>Goa</option><option>Manali</option><option>Delhi</option><option>Jaipur</option></select>
-<select><option>Select Package</option><option>Beach Retreat - ₹15000</option><option>Mountain Trek - ₹12000</option><option>Heritage Tour - ₹10000</option></select>
-<input type="date">
-<select><option>Payment Mode</option><option>UPI</option><option>Card</option><option>Cash</option></select>
-<button>Book Now</button>
-
-<div class="package">
-<div class="card"><h4>Goa - Beach Retreat</h4><p>₹15000</p><p> 4.8 Rating</p></div>
-<div class="card"><h4>Manali - Mountain Trek</h4><p>₹12000</p><p> 4.7 Rating</p></div>
-<div class="card"><h4>Jaipur - Heritage Tour</h4><p>₹10000</p><p> 4.5 Rating</p></div>
+<div class="header"><h2>Admin Dashboard - Tourism Management</h2></div>
+<div class="sidebar">
+<p>Dashboard</p><p>All Bookings</p><p>Users</p><p>Packages</p><p>Revenue Report</p><p>Logout</p>
 </div>
+<div class="content">
+<div class="box"><h3>500+</h3><p>Total Bookings</p></div>
+<div class="box"><h3>₹12 Lakh</h3><p>Total Revenue</p></div>
+<div class="box"><h3>Goa</h3><p>Top City</p></div>
+<div class="box"><h3>UPI</h3><p>Top Payment</p></div>
+
+<table>
+<tr><th>Booking ID</th><th>Name</th><th>City</th><th>Package</th><th>Amount</th><th>Status</th></tr>
+<tr><td>101</td><td>Rahul</td><td>Goa</td><td>Beach Retreat</td><td>15000</td><td>Confirmed</td></tr>
+<tr><td>102</td><td>Priya</td><td>Manali</td><td>Mountain Trek</td><td>12000</td><td>Confirmed</td></tr>
+<tr><td>103</td><td>Aman</td><td>Jaipur</td><td>Heritage Tour</td><td>10000</td><td>Pending</td></tr>
+</table>
 </div>
 </body>
 </html>
