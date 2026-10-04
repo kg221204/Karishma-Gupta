@@ -3,6 +3,7 @@
 <head>
 <title>Admin Panel - Tourism</title>
 <link rel="stylesheet" href="admin.css">
+</head>
 <style>
 body{font-family: Arial; margin:0; background:#f4f4f4;}
 .header{background:#023e8a; color:white; padding:15px; text-align:center;}
